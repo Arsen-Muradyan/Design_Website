@@ -1,0 +1,179 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  background: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .navbar .navbar-title {
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin-left: 40px;
+    color: #22afe7;
+    font-family: sans-serif; }
+  .navbar .navbar-nav {
+    list-style: none;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    margin-left: auto;
+    margin-right: 90px; }
+    .navbar .navbar-nav .navbar-item {
+      float: left;
+      margin-left: 40px; }
+    .navbar .navbar-nav .navbar-link {
+      text-decoration: none;
+      font-family: sans-serif;
+      color: #fff;
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+      font-size: 20px; }
+      .navbar .navbar-nav .navbar-link:hover {
+        color: #22afe7; }
+
+main {
+  width: 1300px;
+  margin: auto; }
+  main .cards-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 30px; }
+    main .cards-container .card {
+      width: 20%;
+      background: #22afe7;
+      padding: 20px;
+      -webkit-box-shadow: -7px 5px 32px 2px rgba(0, 0, 0, 0.21);
+      box-shadow: -7px 5px 32px 2px rgba(0, 0, 0, 0.21); }
+  main #section-a {
+    margin-bottom: 100px; }
+  main #section-b {
+    display: -webkit-box;
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    main #section-b .parent-image {
+      width: 500px;
+      height: 100%;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      main #section-b .parent-image .img-cards {
+        width: 500px;
+        margin-bottom: 50px;
+        display: inline-block; }
+        main #section-b .parent-image .img-cards img {
+          width: 150px;
+          float: left;
+          margin-right: 30px; }
+    main #section-b .main-img {
+      width: 550px;
+      margin-left: 230px;
+      margin-bottom: 100px; }
+
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: #333;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  footer h4 {
+    font-weight: normal;
+    font-family: sans-serif;
+    margin-left: 60px; }
+
+.title {
+  font-size: 2rem;
+  font-family: sans-serif; }
+
+.planet {
+  color: #22afe7; }
+
+.ddd-color {
+  color: #ddd; }
+
+.sub {
+  font-size: 1.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'sans-serif'; }
+
+.text {
+  font-family: sans-serif;
+  font-size: 16px; }
+
+.upper {
+  text-transform: uppercase; }
+
+.cent {
+  text-align: center; }
+
+.wh {
+  color: #fff; }
+
+@media only screen and (max-width: 1200px) {
+  footer, nav.navbar {
+    width: 150%; }
+  nav.navbar ul.navbar-nav {
+    margin: auto;
+    position: relative;
+    right: 100px; }
+  main {
+    width: 1000px; } }
+
+@media only screen and (max-width: 800px) {
+  nav.navbar {
+    text-align: center;
+    height: 200px; }
+    nav.navbar h1.navbar-title {
+      display: none; }
+    nav.navbar li.navbar-item {
+      width: 100%; }
+    nav.navbar ul.navbar-nav {
+      margin-left: 9%;
+      -ms-flex-item-align: center;
+      align-self: center;
+      line-height: 40px; }
+  main {
+    width: 300px; }
+    main div.cards-container {
+      display: inline; }
+      main div.cards-container div.card {
+        width: 300px;
+        display: block;
+        margin-top: 50px;
+        -webkit-box-shadow: 0 0  0 0;
+        box-shadow: 0 0  0 0; }
+    main section#section-b div.parent-image {
+      display: inherit; }
+      main section#section-b div.parent-image div.img-cards {
+        width: 200px; }
+        main section#section-b div.parent-image div.img-cards img {
+          margin-bottom: 30px; }
+        main section#section-b div.parent-image div.img-cards p.text {
+          clear: left; }
+    main section#section-b img.main-img {
+      display: none; } }
+
+@media only screen and (max-width: 300px) {
+  nav.navbar ul.navbar-nav {
+    margin-left: 4%; }
+  main {
+    width: 200px; }
+    main div.cards-container div.card {
+      width: 200px; } }
